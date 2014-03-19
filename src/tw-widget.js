@@ -12,23 +12,31 @@ $(document).ready(function(){
     console.log("each all")
     var $w = $(this),
         name = $w.attr("data-channel-name"),
+        link = "https://twitch.tv/" + name,
+        channelUrl = "https://api.twitch.tv/kraken/channels/" + name + "?callback=?",
+        streamUrl = "https://api.twitch.tv/kraken/streams/" + name + "?callback=?",
         $title, $count, $header, $img;
-
-    console.log(channel);
 
     // channel image
     $img = $(document.createElement('img'))
       .attr("width", "40px")
-      .attr("height", "40px")
-      .attr("src","http://static-cdn.jtvnw.net/jtv_user_pictures/barreljumpers-profile_image-a9173587c121f8ed-300x300.png");
+      .attr("height", "40px");
 
     // channel title
     $title = $(document.createElement('a'))
-      .addClass('tw-title')
-      .text("Barrel Jumpers");
+      .addClass('tw-title');
 
     // game name
-    $w.append($img).append($title);
+    $w
+      .append($img)
+      .append($title);
+
+    $.getJSON(channelUrl, function (data){
+      $title
+        .text(data.display_name)
+        .attr('href', link);
+      $img.attr('src', data.logo)
+    })
   })
 })(jQuery);
 
