@@ -1,0 +1,41 @@
+@background: #444;
+
+.tw-widget {
+  height: 40px;
+  padding: 7px 5px;
+  background: @background;
+  border-radius: 3px;
+  color: #fff - @background;
+}
+
+.tw-link {
+  text-decoration: none;
+}
+
+.tw-widget img {
+  float: left;
+}
+
+.tw-status:before {
+  content: '●';
+  color: gray;
+  padding: 0 2px;
+}
+
+.tw-status.tw-online:before {
+  color: red;
+}
+
+.tw-title {
+
+  font-size: 12px;
+  padding: 0 4px;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.tw-viewers {
+   font-size: 10px;
+}
