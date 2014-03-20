@@ -15,7 +15,7 @@ $(document).ready(function(){
         link = "https://twitch.tv/" + name,
         channelUrl = "https://api.twitch.tv/kraken/channels/" + name + "?callback=?",
         streamUrl = "https://api.twitch.tv/kraken/streams/" + name + "?callback=?",
-        $title, $count, $status, $info, $img;
+        $title, $viewers, $status, $info, $img;
 
     // channel image
     $img = $(document.createElement('img'))
@@ -30,7 +30,9 @@ $(document).ready(function(){
     // status
     $status = $(document.createElement('span'))
       .addClass('tw-status');
-
+    $viewers = $(document.createElement('span'))
+      .addClass('tw-viewers')
+      .text(50);
 
     $info
       .append($status);
@@ -38,7 +40,8 @@ $(document).ready(function(){
     $w
       .append($img)
       .append($title)
-      .append($info);
+      .append($info)
+      .append($viewers);
 
     /*
      * Getting common information about channel
@@ -64,6 +67,8 @@ $(document).ready(function(){
         $status
           .text('LIVE')
           .addClass('tw-online')
+        $viewers
+          .text(stream.viewers)
       } else {
         $status
           .text('Offline');

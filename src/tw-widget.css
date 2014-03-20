@@ -5,6 +5,7 @@
   background: #444444;
   border-radius: 3px;
   color: #fff;
+  position: relative;
 }
 .tw-link {
   text-decoration: none;
@@ -29,5 +30,13 @@
   text-overflow: ellipsis;
 }
 .tw-viewers {
-  font-size: 10px;
+  font-size: 11px;
+  position: absolute;
+  right: 7px;
+  top: 3px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAALElEQ…Jv5VX+Y8MMuMCI1IBNEwMxgGjFRDsJl0KsGolVDNdEqgYApI+zD5lZI50AAAAASUVORK5CYII=);
+  padding-left: 11px;
+  background-size: 22%;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
 }
