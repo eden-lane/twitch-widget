@@ -31,6 +31,7 @@ $(document).ready(function(){
     $status = $(document.createElement('span'))
       .addClass('tw-status');
 
+
     $info
       .append($status);
 
@@ -60,9 +61,12 @@ $(document).ready(function(){
     $.getJSON(streamUrl, function (data) {
       if (data.stream) {
         var stream = data.stream;
-        $status[0].innerText = 'Online'
+        $status
+          .text('LIVE')
+          .addClass('tw-online')
       } else {
-        $status[0].innerText = 'Offline';
+        $status
+          .text('Offline');
       }
     });
   })
