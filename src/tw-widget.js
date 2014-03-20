@@ -15,7 +15,7 @@ $(document).ready(function(){
         link = "https://twitch.tv/" + name,
         channelUrl = "https://api.twitch.tv/kraken/channels/" + name + "?callback=?",
         streamUrl = "https://api.twitch.tv/kraken/streams/" + name + "?callback=?",
-        $title, $count, $header, $img;
+        $title, $count, $status, $info, $img;
 
     // channel image
     $img = $(document.createElement('img'))
@@ -26,17 +26,45 @@ $(document).ready(function(){
     $title = $(document.createElement('a'))
       .addClass('tw-title');
 
-    // game name
+    $info = $(document.createElement('div'))
+    // status
+    $status = $(document.createElement('span'))
+      .addClass('tw-status');
+
+    $info
+      .append($status);
+
     $w
       .append($img)
-      .append($title);
+      .append($title)
+      .append($info);
 
+    /*
+     * Getting common information about channel
+     * - title
+     * - logo
+     * - subscribers ?
+     */
     $.getJSON(channelUrl, function (data){
       $title
         .text(data.display_name)
         .attr('href', link);
       $img.attr('src', data.logo)
-    })
+    });
+
+    /*
+     * Getting info about stream
+     * - game
+     * - viewers
+     */
+    $.getJSON(streamUrl, function (data) {
+      if (data.stream) {
+        var stream = data.stream;
+        $status[0].innerText = 'Online'
+      } else {
+        $status[0].innerText = 'Offline';
+      }
+    });
   })
 })(jQuery);
 
