@@ -6,10 +6,8 @@
 $(document).ready(function(){
 (function ($) {
   var $all = $(".tw-widget");
-  //console.log($all);
 
   $all.each(function () {
-    console.log("each all")
     var $w = $(this),
         name = $w.attr("data-channel-name"),
         link = "https://twitch.tv/" + name,
@@ -31,8 +29,7 @@ $(document).ready(function(){
     $status = $(document.createElement('span'))
       .addClass('tw-status');
     $viewers = $(document.createElement('span'))
-      .addClass('tw-viewers')
-      .text(50);
+      .addClass('tw-viewers');
 
     $info
       .append($status);
