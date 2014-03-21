@@ -1,18 +1,18 @@
-### Twitch Widget
-#### Using
-1. Add script:
+## Twitch Widget
+### Using
+#### Add script:
 ```html
 <script type="text/javascript" src="tw-widget.js"></script>
 ```
-2. Add styles
+#### Add styles
 ```html
 <link rel="stylesheet" href="tw-widget.css"/>
 ```
-3. Add div with class `tw-widget` in place where you want to see a widget:
+### Add div with class `tw-widget` in place where you want to see a widget:
 ```html
 <div class="tw-widget" data-channel-name="starladder1"></div>
 ```
 
-#### Roadmap
+### Roadmap
 - tests
 - exclude jquery
