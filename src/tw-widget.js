@@ -72,6 +72,7 @@ $(document).ready(function(){
       } else {
         $status
           .text('Offline');
+        $viewers.hide();
       }
     });
   })
