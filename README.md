@@ -15,7 +15,7 @@
 ```
 
 #### Roadmap
-- [ ] tests
+- [x] tests
 - [ ] exclude jquery
 
 #### Notes
