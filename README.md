@@ -1,4 +1,6 @@
 ## Twitch Widget
+![Online](http://drp.io/files/532eb0df98d97.png)
+![Offline](http://drp.io/files/532eb072874f8.png "offline")
 ### Using
 #### Add script:
 ```html
