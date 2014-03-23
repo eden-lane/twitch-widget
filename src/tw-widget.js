@@ -34,12 +34,6 @@ $(document).ready(function(){
     $info
       .append($status);
 
-    $w
-      .append($img)
-      .append($title)
-      .append($info)
-      .append($viewers);
-
     /*
      * Getting common information about channel
      * - title
@@ -71,6 +65,12 @@ $(document).ready(function(){
           .text('Offline');
         $viewers.hide();
       }
+    }).done(function () {
+      $w
+      .append($img)
+      .append($title)
+      .append($info)
+      .append($viewers);
     });
   })
 })(jQuery);
