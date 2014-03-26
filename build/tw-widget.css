@@ -1,0 +1,41 @@
+.tw-widget {
+  height: 40px;
+  padding: 7px 5px;
+  background: #444444;
+  border-radius: 3px;
+  color: #fff;
+  position: relative;
+}
+.tw-link {
+  text-decoration: none;
+}
+.tw-widget img {
+  float: left;
+}
+.tw-status:before {
+  content: '●';
+  color: gray;
+  padding: 0 2px;
+}
+.tw-status.tw-online:before {
+  color: red;
+}
+.tw-title {
+  font-size: 14px;
+  padding: 0 4px;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.tw-viewers {
+  font-size: 11px;
+  position: absolute;
+  right: 7px;
+  top: 3px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAALElEQVR42mNgQAJv5VX+Y8MMuMCI1IBNEwMxgGjFRDsJl0KsGolVDNdEqgYApI+zD5lZI50AAAAASUVORK5CYII=);
+  padding-left: 11px;
+  background-size: 8px;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+}
