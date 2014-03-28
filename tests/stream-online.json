@@ -1,0 +1,55 @@
+{
+  "_links": {
+    "self": "https://api.twitch.tv/kraken/streams/buzzbean",
+    "channel": "https://api.twitch.tv/kraken/channels/buzzbean"
+  },
+  "stream": {
+    "_id": 9022212864,
+    "game": "Dark Souls II",
+    "viewers": 1132,
+    "preview": {
+      "small": "http://static-cdn.jtvnw.net/previews-ttv/live_user_buzzbean-80x50.jpg",
+      "medium": "http://static-cdn.jtvnw.net/previews-ttv/live_user_buzzbean-320x200.jpg",
+      "large": "http://static-cdn.jtvnw.net/previews-ttv/live_user_buzzbean-640x400.jpg",
+      "template": "http://static-cdn.jtvnw.net/previews-ttv/live_user_buzzbean-{width}x{height}.jpg"
+    },
+    "_links": {
+      "self": "https://api.twitch.tv/kraken/streams/buzzbean"
+    },
+    "channel": {
+      "mature": null,
+      "abuse_reported": null,
+      "status": "대도서관(Great-Library) 테스트 중 - 어서오세요 ^ -^)/",
+      "display_name": "buzzbean",
+      "game": "Dark Souls II",
+      "delay": 0,
+      "_id": 29606106,
+      "name": "buzzbean",
+      "created_at": "2012-04-07T22:46:38Z",
+      "updated_at": "2014-03-28T13:46:54Z",
+      "primary_team_name": null,
+      "primary_team_display_name": null,
+      "logo": null,
+      "banner": null,
+      "video_banner": null,
+      "background": null,
+      "profile_banner": null,
+      "profile_banner_background_color": null,
+      "url": "http://www.twitch.tv/buzzbean",
+      "views": 10962,
+      "followers": 544,
+      "_links": {
+        "self": "https://api.twitch.tv/kraken/channels/buzzbean",
+        "follows": "https://api.twitch.tv/kraken/channels/buzzbean/follows",
+        "commercial": "https://api.twitch.tv/kraken/channels/buzzbean/commercial",
+        "stream_key": "https://api.twitch.tv/kraken/channels/buzzbean/stream_key",
+        "chat": "https://api.twitch.tv/kraken/chat/buzzbean",
+        "features": "https://api.twitch.tv/kraken/channels/buzzbean/features",
+        "subscriptions": "https://api.twitch.tv/kraken/channels/buzzbean/subscriptions",
+        "editors": "https://api.twitch.tv/kraken/channels/buzzbean/editors",
+        "teams": "https://api.twitch.tv/kraken/channels/buzzbean/teams",
+        "videos": "https://api.twitch.tv/kraken/channels/buzzbean/videos"
+      }
+    }
+  }
+}
