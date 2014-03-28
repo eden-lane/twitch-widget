@@ -14,7 +14,7 @@ $(document).ready(function(){
         LOGO = "http://s.jtvnw.net/jtv_user_pictures/hosted_images/GlitchIcon_white.png",
         channelUrl = "https://api.twitch.tv/kraken/channels/" + name + "?callback=?",
         streamUrl = "https://api.twitch.tv/kraken/streams/" + name + "?callback=?",
-        $title, $viewers, $status, $info, $img;
+        $title, $viewers, $status, $info, $img, $game;
 
     // channel image
     $img = $(document.createElement('img'))
@@ -25,15 +25,17 @@ $(document).ready(function(){
     $title = $(document.createElement('a'))
       .addClass('tw-title');
 
-    $info = $(document.createElement('div'))
+    $info = $(document.createElement('div'));
     // status
     $status = $(document.createElement('span'))
       .addClass('tw-status');
+    // viewers
     $viewers = $(document.createElement('span'))
       .addClass('tw-viewers');
+    $game = $(document.createElement('span'))
+      .addClass('tw-game');
 
-//    $info
-//      .append($status);
+
 
     /*
      * Getting common information about channel
@@ -57,13 +59,15 @@ $(document).ready(function(){
       if (data.stream) {
         var stream = data.stream;
         $status
-          //.text('LIVE')
-          .addClass('tw-online')
+          .addClass('tw-online');
         $viewers
-          .text(stream.viewers)
+          .text(stream.viewers);
+        $game
+          .text(data.stream.game)
+        $info
+          .append($game);
       } else {
-        $status
-          //.text('Offline');
+        $status;
         $viewers.hide();
       }
     }).done(function () {
