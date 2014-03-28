@@ -32,8 +32,8 @@ $(document).ready(function(){
     $viewers = $(document.createElement('span'))
       .addClass('tw-viewers');
 
-    $info
-      .append($status);
+//    $info
+//      .append($status);
 
     /*
      * Getting common information about channel
@@ -57,18 +57,19 @@ $(document).ready(function(){
       if (data.stream) {
         var stream = data.stream;
         $status
-          .text('LIVE')
+          //.text('LIVE')
           .addClass('tw-online')
         $viewers
           .text(stream.viewers)
       } else {
         $status
-          .text('Offline');
+          //.text('Offline');
         $viewers.hide();
       }
     }).done(function () {
       $w
       .append($img)
+      .append($status)
       .append($title)
       .append($info)
       .append($viewers);

@@ -16,7 +16,9 @@
 .tw-status:before {
   content: '●';
   color: gray;
-  padding: 0 2px;
+  position: absolute;
+  left: 34px;
+  bottom: 30px;
 }
 .tw-status.tw-online:before {
   color: red;
