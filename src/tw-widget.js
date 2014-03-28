@@ -11,6 +11,7 @@ $(document).ready(function(){
     var $w = $(this),
         name = $w.attr("data-channel-name"),
         link = "https://twitch.tv/" + name,
+        LOGO = "http://s.jtvnw.net/jtv_user_pictures/hosted_images/GlitchIcon_white.png",
         channelUrl = "https://api.twitch.tv/kraken/channels/" + name + "?callback=?",
         streamUrl = "https://api.twitch.tv/kraken/streams/" + name + "?callback=?",
         $title, $viewers, $status, $info, $img;
@@ -44,7 +45,7 @@ $(document).ready(function(){
       $title
         .text(data.display_name)
         .attr('href', link);
-      $img.attr('src', data.logo)
+      $img.attr('src', data.logo || LOGO)
     });
 
     /*
