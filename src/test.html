@@ -4,19 +4,44 @@
   <script type="text/javascript" src="jquery.min.js"></script>
   <link rel="stylesheet" href="tw-widget.css"/>
   <style>
+    body {
+      background: #fafafa;
+    }
+
     .container {
-      width: 250px;
+      width: 600px;
       margin: 0 auto;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    td {
+      width: 33%;
     }
   </style>
 </head>
 <body style="padding: 100px">
+
   <div class="container">
-    <div class="tw-widget" data-channel-name="starladder1"></div>
-    <br />
-    <div class="tw-widget" data-channel-name="Reckful"></div>
-    <br />
-    <div class="tw-widget" data-channel-name="Buzzbean"></div>
+    <h1>Twitch-widget</h1>
+    <p>This widget will display information about your <b>stream-status</b> and <b>amount of viewers</b>:</p>
+    <table>
+      <tbody>
+      <tr>
+        <td>
+          <div class="tw-widget" data-channel-name="starladder1"></div>
+        </td>
+        <td>
+          <div class="tw-widget" data-channel-name="Reckful"></div>
+        </td>
+        <td>
+          <div class="tw-widget" data-channel-name="Buzzbean"></div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
   </div>
 </body>
 

@@ -1,6 +1,5 @@
 ## Twitch Widget
-![Online](http://drp.io/files/532eb0df98d97.png)
-![Offline](http://drp.io/files/532eb072874f8.png "offline")
+![](http://drp.io/files/5336dac1dfd78.png)
 ### Using
 You can add a widget in 3 simple steps:
 
