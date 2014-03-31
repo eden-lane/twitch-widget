@@ -16,4 +16,14 @@ gulp.task('styles', function (){
       .pipe(gulp.dest('build'));
 });
 
+gulp.task('dev', function () {
+  return gulp.src('src/tw-widget.less')
+        .pipe(less())
+        .pipe(gulp.dest('src'))
+});
+
+gulp.task('watch', function () {
+  return gulp.watch('src/*.less', ['dev']);
+})
+
 gulp.task('default', ['scripts', 'styles']);
