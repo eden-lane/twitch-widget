@@ -1,5 +1,6 @@
 ## Twitch Widget
 ![](http://drp.io/files/5336dac1dfd78.png)
+<div class="tw-wtidget">asdasd</div>
 ### Using
 You can add a widget in 3 simple steps:
 
