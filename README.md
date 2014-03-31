@@ -1,6 +1,5 @@
 ## Twitch Widget
 ![](http://drp.io/files/5336dac1dfd78.png)
-<div class="tw-wtidget">asdasd</div>
 ### Using
 You can add a widget in 3 simple steps:
 
@@ -16,7 +15,3 @@ You can add a widget in 3 simple steps:
 ```html
 <div class="tw-widget" data-channel-name="starladder1"></div>
 ```
-
-### Roadmap
-- tests
-- exclude jquery
