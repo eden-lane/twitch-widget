@@ -1,13 +1,27 @@
 //OUTPUT: tw-widget.css
 
-@background: #444;
+@background-color: #444;
+@font-color: #fff;
+@widget-height: 40px;
 
-.tw-widget {
-  height: 40px;
+.tw-nowrap {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.tw-container {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.tw-widget, .tw-widget2 {
+  background: @background-color;
+  color: @font-color;
+  height: @widget-height;
   padding: 7px 5px;
-  background: @background;
   border-radius: 3px;
-  color: #fff;
   position: relative;
 }
 
@@ -32,12 +46,10 @@
 }
 
 .tw-title {
+  color: @font-color;
   font-size: 14px;
   padding: 0 4px;
-  color: #fff;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  .tw-nowrap;
 }
 
 .tw-game {
@@ -46,6 +58,7 @@
   padding-left: 18px;
   margin: 5px;
   font-size: 13px;
+  .tw-nowrap;
 }
 
 .tw-viewers {
