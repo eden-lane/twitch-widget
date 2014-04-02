@@ -4,6 +4,8 @@
   <script type="text/javascript" src="../src/jquery.min.js"></script>
   <link rel="stylesheet" href="../src/tw-widget.css"/>
   <script type="text/javascript" src="../src/tw-widget.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <link rel="stylesheet" href="http://jmblog.github.io/color-themes-for-google-code-prettify/css/themes/hemisu-light.css"/>
   <style>
     body {
       padding: 100px 25%;
@@ -19,9 +21,19 @@
       margin-left: 20px;
       float: left;
     }
+
+    pre.prettyprint {
+      border: none;
+    }
+
+    .prettyprint {
+      border: none;
+      background: transparent;
+    }
   </style>
 </head>
 <body>
+  <h2>Demo:</h2>
   <div class="tw-container">
     <div class="tw-widget" data-channel-name="aces_tv"></div>
   </div>
@@ -35,4 +47,16 @@
   <div class="clear"></div>
   <br/>
   <h2>Using:</h2>
+  <pre class="prettyprint prettyprinted" style=""><code class="language-html5"><span class="tag">&lt;head&gt;</span><span class="pln">
+  </span><span class="com">&lt;!-- jquery --&gt;</span><span class="pln">
+  </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/javascript"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"jquery.min.js"</span><span class="tag">&gt;&lt;/script&gt;</span><span class="pln">
+  </span><span class="com">&lt;!-- styles --&gt;</span><span class="pln">
+  </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"tw-widget.css"</span><span class="tag">/&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+  </span><span class="com">&lt;!-- div with 'tw-widget' class and name of your channel --&gt;</span><span class="pln">
+  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tw-widget"</span><span class="pln"> </span><span class="atn">data-channel-name</span><span class="pun">=</span><span class="atv">"YOUR_CHANNEL_NAME_HERE"</span><span class="tag">&gt;&lt;/div&gt;</span><span class="pln">
+  </span><span class="com">&lt;!-- script --&gt;</span><span class="pln">
+  </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/javascript"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"tw-widget.js"</span><span class="tag">&gt;&lt;/script&gt;</span><span class="pln">
+</span><span class="tag">&lt;/body&gt;</span></code></pre>
 </body>
